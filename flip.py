@@ -14,12 +14,12 @@ sdef = tkinter.StringVar()
 ldef = tkinter.Label(root, textvariable = sdef)
 
 def ans():
-    with open("../test.json", 'r') as fh:
+    with open("../Acronyms.json", 'r') as fh:
         temp = json.load(fh)
         sdef.set(temp[sacro.get()])
 
 def Next():
-    with open("../test.json", 'r') as fh:
+    with open("../Acronyms.json", 'r') as fh:
             temp = json.load(fh)
             ansset = random.choice(list(temp))
             sacro.set(ansset)

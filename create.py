@@ -4,14 +4,14 @@ import json
 temp = {}
 
 try:
-    with open("../test.json", 'r') as fh:
+    with open("../Acronyms.json", 'r') as fh:
         temp = json.load(fh)
 except:
     pass
 
 
 def submit():
-    with open("../test.json", 'w') as fh:
+    with open("../Acronyms.json", 'w') as fh:
         
         Acronym = tfAcro.get()
         Definition = tfDef.get()
